@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>shardingsphere-learing-demo</module>
+        <module>shardingsphere-learing-read-write</module>
     </modules>
 
     <parent>
