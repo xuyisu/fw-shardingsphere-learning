@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yisu.shardingaphere.demo.mapper.UserinfoMapper">
+
+    <resultMap id="Userinfo" type="com.yisu.shardingaphere.demo.model.Userinfo" >
+        <result column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="addtime" property="addtime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        `id`,
+        `username`,
+        `addtime`
+    </sql>
+
+
+
+</mapper>
