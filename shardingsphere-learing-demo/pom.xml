@@ -12,7 +12,7 @@
     <artifactId>shardingsphere-learing-demo</artifactId>
 
     <properties>
-        <sharding-sphere.version>4.0.1</sharding-sphere.version>
+        <sharding-sphere.version>4.0.0-RC1</sharding-sphere.version>
     </properties>
 
 
@@ -37,18 +37,18 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-       <!-- &lt;!&ndash; for spring boot &ndash;&gt;
+        <!-- for spring boot -->
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
             <version>${sharding-sphere.version}</version>
         </dependency>
 
-        &lt;!&ndash; for spring namespace &ndash;&gt;
+        <!-- for spring namespace -->
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>sharding-jdbc-spring-namespace</artifactId>
             <version>${sharding-sphere.version}</version>
-        </dependency>-->
+        </dependency>
     </dependencies>
 </project>
