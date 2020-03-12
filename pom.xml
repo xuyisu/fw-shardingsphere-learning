@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>shardingsphere-learing-read-write</module>
+        <module>shardingsphere-learning-sub-db-table</module>
     </modules>
 
     <parent>
@@ -29,6 +30,7 @@
         <commons-lang3.version>3.8.1</commons-lang3.version>
         <hutool-all.version>5.0.6</hutool-all.version>
         <druid.version>1.1.10</druid.version>
+        <sharding-sphere.version>4.0.0-RC1</sharding-sphere.version>
     </properties>
 
     <dependencyManagement>
@@ -61,8 +63,14 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--test-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
+        <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -75,6 +83,36 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!--druid 数据连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!-- mysql驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- for spring boot -->
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+            <version>${sharding-sphere.version}</version>
+        </dependency>
+
+        <!-- for spring namespace -->
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-spring-namespace</artifactId>
+            <version>${sharding-sphere.version}</version>
         </dependency>
     </dependencies>
 

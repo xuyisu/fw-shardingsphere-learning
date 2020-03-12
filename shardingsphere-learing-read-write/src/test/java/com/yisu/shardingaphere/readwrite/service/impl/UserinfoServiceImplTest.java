@@ -1,7 +1,7 @@
 package com.yisu.shardingaphere.readwrite.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.yisu.shardingaphere.FwShardingsphere;
+import com.yisu.shardingaphere.FwShardingsphereReadWrite;
 import com.yisu.shardingaphere.readwrite.model.Userinfo;
 import com.yisu.shardingaphere.readwrite.service.UserinfoService;
 import org.junit.Test;
@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,classes = {FwShardingsphere.class})
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,classes = {FwShardingsphereReadWrite.class})
 public class UserinfoServiceImplTest {
 
     @Autowired

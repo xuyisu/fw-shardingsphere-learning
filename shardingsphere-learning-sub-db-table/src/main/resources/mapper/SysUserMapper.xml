@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yisu.shardingsphere.sub.dbtable.mapper.SysUserMapper">
+
+    <resultMap id="SysUser" type="com.yisu.shardingsphere.sub.dbtable.model.SysUser" >
+        <result column="id" property="id" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_user" property="createUser" />
+        <result column="update_user" property="updateUser" />
+        <result column="delete_flag" property="deleteFlag" />
+        <result column="pos_code" property="posCode" />
+        <result column="disable_flag" property="disableFlag" />
+        <result column="avatar" property="avatar" />
+        <result column="email" property="email" />
+        <result column="password" property="password" />
+        <result column="user_name" property="userName" />
+        <result column="real_name" property="realName" />
+        <result column="dept_code" property="deptCode" />
+        <result column="user_phone" property="userPhone" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        `id`,
+        `create_time`,
+        `update_time`,
+        `create_user`,
+        `update_user`,
+        `delete_flag`,
+        `pos_code`,
+        `disable_flag`,
+        `avatar`,
+        `email`,
+        `password`,
+        `user_name`,
+        `real_name`,
+        `dept_code`,
+        `user_phone`
+    </sql>
+
+
+
+</mapper>

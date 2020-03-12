@@ -9,11 +9,11 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @author xuyisu
  * @date '2020-03-10'
  */
-@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
-public class FwShardingsphere {
+@SpringBootApplication
+public class FwShardingsphereReadWrite {
 
     public static void main(String[] args) {
-        SpringApplication.run(FwShardingsphere.class, args);
+        SpringApplication.run(FwShardingsphereReadWrite.class, args);
     }
 
 }
