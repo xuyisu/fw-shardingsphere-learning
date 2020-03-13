@@ -16,7 +16,7 @@ ShardingSphere分库分表、读写分离、数据脱敏案例
 |  Hutool   | 5.0.6   |
 
 ## 安装教程
-* 先建mysql库
+* 先建mysql实例
 * 初始化sql,sql会上传到群文件里面
 * 除了common包，均可直接启动（启动时需要配置dbIp变量）
 
