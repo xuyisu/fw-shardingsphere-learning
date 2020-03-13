@@ -1,6 +1,6 @@
-package com.yisu.shardingsphere.sub.dbtable.service;
+package com.yisu.shardingsphere.common.service;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yisu.shardingsphere.sub.dbtable.model.SysUser;
+import com.yisu.shardingsphere.common.model.SysUser;
 
 /**
  * @description 系统用户表-业务接口

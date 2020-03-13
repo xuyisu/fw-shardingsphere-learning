@@ -1,4 +1,4 @@
-package com.yisu.shardingsphere.sub.dbtable.model;
+package com.yisu.shardingsphere.common.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

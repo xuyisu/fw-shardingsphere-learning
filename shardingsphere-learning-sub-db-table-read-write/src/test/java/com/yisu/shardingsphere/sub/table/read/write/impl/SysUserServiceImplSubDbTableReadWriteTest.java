@@ -1,4 +1,4 @@
-package com.yisu.shardingsphere.sub.dbtable.service.impl;
+package com.yisu.shardingsphere.sub.table.read.write.impl;
 
 import com.yisu.shardingsphere.common.service.SysUserService;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class SysUserServiceImplTest {
+public class SysUserServiceImplSubDbTableReadWriteTest {
     @Autowired
     private SysUserService sysUserService;
 

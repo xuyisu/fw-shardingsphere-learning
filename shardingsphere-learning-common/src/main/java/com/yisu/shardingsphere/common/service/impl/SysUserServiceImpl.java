@@ -1,9 +1,9 @@
-package com.yisu.shardingsphere.sub.dbtable.service.impl;
+package com.yisu.shardingsphere.common.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yisu.shardingsphere.sub.dbtable.mapper.SysUserMapper;
-import com.yisu.shardingsphere.sub.dbtable.model.SysUser;
-import com.yisu.shardingsphere.sub.dbtable.service.SysUserService;
+import com.yisu.shardingsphere.common.mapper.SysUserMapper;
+import com.yisu.shardingsphere.common.model.SysUser;
+import com.yisu.shardingsphere.common.service.SysUserService;
 import org.springframework.stereotype.Service;
 
 /**
