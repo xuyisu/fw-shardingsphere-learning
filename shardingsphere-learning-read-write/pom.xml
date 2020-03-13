@@ -11,4 +11,11 @@
 
     <artifactId>shardingsphere-learning-read-write</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.yisu.fwcloud</groupId>
+            <artifactId>shardingsphere-learning-common</artifactId>
+            <version>${version}</version>
+        </dependency>
+    </dependencies>
 </project>

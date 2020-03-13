@@ -1,4 +1,4 @@
-package com.yisu.shardingsphere.sub.table.read.write.impl;
+package com.yisu.shardingsphere.sub.dbtable.service.impl;
 
 import cn.hutool.core.date.DateUtil;
 import com.yisu.shardingsphere.common.model.SysUser;
@@ -16,7 +16,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class SysUserServiceImplSubDbTableReadWriteTest {
+public class SysUserServiceImplSubDBbTableTest {
     @Autowired
     private SysUserService sysUserService;
 
@@ -72,14 +72,5 @@ public class SysUserServiceImplSubDbTableReadWriteTest {
         boolean saveBatch = sysUserService.saveBatch(list);
         Assert.assertEquals(true,saveBatch);
     }
-
-
-    @Test
-    public void testSelectAll(){
-        List<SysUser> sysUserList = sysUserService.list();
-        System.out.println(sysUserList.size());
-    }
-
-
 
 }
