@@ -14,6 +14,7 @@
         <module>shardingsphere-learning-sub-db-table-read-write</module>
         <module>shardingsphere-learning-common</module>
         <module>shardingsphere-learning-sub-table</module>
+        <module>shardingsphere-learning-sub-table-read-write</module>
     </modules>
 
     <parent>
