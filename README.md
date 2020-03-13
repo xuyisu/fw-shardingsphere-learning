@@ -22,3 +22,8 @@ ShardingSphere分库分表、读写分离、数据脱敏案例
 * 新建 Feat_xxx 分支
 * 提交代码
 * 新建 Pull Request
+
+### 交流群(QQ群779183850)
+>里面上传了很多架构、技术文档、共同进步
+
+![](images/security技术交流群二维码.png)
