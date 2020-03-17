@@ -11,9 +11,10 @@ ShardingSphere分库分表、读写分离、数据脱敏案例
 | --- | --- |
 |  jdk |   1.8.0_161  |
 |  SpringBoot   | 2.2.2.RELEASE   |
-|  Shardingsphere   | 4.0.0-RC1   |
-|  Mybatis-plus   | 3.2.0   |
+|  Shardingsphere   | 4.0.1   |
+|  Mybatis-plus   | 3.3.0   |
 |  Hutool   | 5.0.6   |
+|  HikariCP   | 2.7.9  |
 
 ## 安装教程
 * 先建mysql实例

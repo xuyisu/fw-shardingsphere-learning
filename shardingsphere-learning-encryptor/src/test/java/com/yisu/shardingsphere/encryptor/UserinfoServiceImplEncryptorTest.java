@@ -1,7 +1,7 @@
-package com.yisu.shardingsphere.sub.dbtable.service.impl;
+package com.yisu.shardingsphere.encryptor;
+
 
 import cn.hutool.core.date.DateUtil;
-import cn.hutool.json.JSONUtil;
 import com.yisu.shardingsphere.common.model.SysUser;
 import com.yisu.shardingsphere.common.service.SysUserService;
 import org.junit.Assert;
@@ -14,10 +14,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class SysUserServiceImplSubDBbTableTest {
+public class UserinfoServiceImplEncryptorTest {
+
     @Autowired
     private SysUserService sysUserService;
 
@@ -72,13 +72,6 @@ public class SysUserServiceImplSubDBbTableTest {
 
         boolean saveBatch = sysUserService.saveBatch(list);
         Assert.assertEquals(true,saveBatch);
-    }
-
-
-    @Test
-    public  void testSelectOne(){
-        SysUser byId = sysUserService.getById(1239745242790203394L);
-        System.out.println(JSONUtil.toJsonStr(byId));
     }
 
 }
