@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * @description 系统用户表-实体
  * @author xuyisu
- * @date '2020-03-12 10:04:27'.
+ * @date '2020-03-22 10:04:27'.
  */
 @Data
 @TableName("sys_user")

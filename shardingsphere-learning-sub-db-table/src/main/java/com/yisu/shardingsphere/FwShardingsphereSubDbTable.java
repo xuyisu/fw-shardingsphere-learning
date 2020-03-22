@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 /**
  * @description 启动类
  * @author xuyisu
- * @date '2020-03-12'
+ * @date '2020-03-22'
  */
 @SpringBootApplication
 public class FwShardingsphereSubDbTable {
