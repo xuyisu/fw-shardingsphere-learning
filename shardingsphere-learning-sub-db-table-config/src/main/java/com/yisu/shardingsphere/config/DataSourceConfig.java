@@ -33,13 +33,15 @@ public class DataSourceConfig{
         shardingRuleConfig.getTableRuleConfigs().add(getOrderTableRuleConfiguration());
         //相同表分片规则的组，如果表分片规则相同，则可以放在一个组里
         shardingRuleConfig.getBindingTableGroups().add("sys_user");
-        //
-        shardingRuleConfig.getBroadcastTables().add("t_config");
+        //广播表
+//        shardingRuleConfig.getBroadcastTables().add("t_config");
         // 根据ID分库 一共分为2个库
         shardingRuleConfig.setDefaultDatabaseShardingStrategyConfig(new InlineShardingStrategyConfiguration("id", "ds${id % 2}"));
         // 根据ID分表  一共分为2张表
         shardingRuleConfig.setDefaultTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("id", new ShardingTableAlgorithmConfig()));
-        return ShardingDataSourceFactory.createDataSource(createDataSourceMap(), shardingRuleConfig, new Properties());
+        Properties properties = new Properties();
+        properties.setProperty("sql.show",Boolean.TRUE.toString());
+        return ShardingDataSourceFactory.createDataSource(createDataSourceMap(), shardingRuleConfig, properties);
     }
 
     /**
