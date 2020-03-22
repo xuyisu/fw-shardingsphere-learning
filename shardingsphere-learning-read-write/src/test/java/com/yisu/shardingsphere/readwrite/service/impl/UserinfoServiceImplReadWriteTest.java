@@ -21,12 +21,18 @@ public class UserinfoServiceImplReadWriteTest {
     @Autowired
     private SysUserService sysUserService;
 
+    /**
+     * 测试数量
+     */
     @Test
     public void testSelect(){
         int count = sysUserService.count();
         System.out.println(count);
     }
 
+    /**
+     * 测试单个新增
+     */
     @Test
     public void testInsert(){
         SysUser sysUser=new SysUser();
@@ -47,7 +53,9 @@ public class UserinfoServiceImplReadWriteTest {
         sysUserService.save(sysUser);
     }
 
-
+    /**
+     * 测试批量新增
+     */
     @Test
     public void testBatch(){
         List<SysUser> list=new ArrayList<>();

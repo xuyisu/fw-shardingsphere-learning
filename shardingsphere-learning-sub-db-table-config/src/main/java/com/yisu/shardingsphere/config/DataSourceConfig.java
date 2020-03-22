@@ -1,6 +1,6 @@
 package com.yisu.shardingsphere.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
+import com.zaxxer.hikari.HikariDataSource;
 import org.apache.shardingsphere.api.config.sharding.ShardingRuleConfiguration;
 import org.apache.shardingsphere.api.config.sharding.TableRuleConfiguration;
 import org.apache.shardingsphere.api.config.sharding.strategy.InlineShardingStrategyConfiguration;
@@ -74,9 +74,9 @@ public class DataSourceConfig{
      * @return
      */
     public static DataSource createDataSource(final String dataSourceName) {
-        DruidDataSource result = new DruidDataSource();
+        HikariDataSource result = new HikariDataSource();
         result.setDriverClassName(com.mysql.jdbc.Driver.class.getName());
-        result.setUrl(String.format("jdbc:mysql://%s:%s/%s?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8", "localhost", "3306", dataSourceName));
+        result.setJdbcUrl(String.format("jdbc:mysql://%s:%s/%s?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8", "localhost", "3306", dataSourceName));
         result.setUsername("root");
         result.setPassword("123456");
         return result;

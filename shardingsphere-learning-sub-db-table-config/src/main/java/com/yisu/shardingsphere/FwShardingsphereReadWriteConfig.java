@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @description 启动类
  * @author xuyisu
- * @date '2020-03-10'
+ * @date '2020-03-22'
  */
 @SpringBootApplication(exclude = SpringBootConfiguration.class)
 public class FwShardingsphereReadWriteConfig {

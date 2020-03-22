@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @description MybatisPlusConfig
  * @author xuyisu
- * @date '2020-03-10'
+ * @date '2020-03-22'
  */
 @Configuration
 @MapperScan(value = "com.yisu.shardingsphere.common.mapper")
