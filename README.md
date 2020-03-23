@@ -28,7 +28,19 @@ ShardingSphere分库分表、读写分离、数据脱敏案例
 * 新建 Pull Request
 
 ## 文档
-抽空会写一个文档
+[Sharding-JDBC 读写分离](https://www.kancloud.cn/xuyisu/springcloud_springboot/1578128)
+*****
+[Sharding-JDBC 分库分表](https://www.kancloud.cn/xuyisu/springcloud_springboot/1578129)
+*****
+[Sharding-JDBC 分库分表基于java bean 的方式](https://www.kancloud.cn/xuyisu/springcloud_springboot/1580661)
+*****
+[Sharding-JDBC 分库分表读写分离](https://www.kancloud.cn/xuyisu/springcloud_springboot/1580662)
+*****
+[Sharding-JDBC 同库分表](https://www.kancloud.cn/xuyisu/springcloud_springboot/1580663)
+*****
+[Sharding-JDBC 同库分表读写分离](https://www.kancloud.cn/xuyisu/springcloud_springboot/1580664)
+*****
+[Sharding-JDBC 数据脱敏](https://www.kancloud.cn/xuyisu/springcloud_springboot/1580665)
 
 ### 交流群(QQ群779183850)
 >里面上传了很多架构、技术文档、共同进步

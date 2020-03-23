@@ -16,7 +16,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class UserinfoServiceImplEncryptorTest {
+    public class UserinfoServiceImplEncryptorTest {
 
     @Autowired
     private SysUserService sysUserService;
