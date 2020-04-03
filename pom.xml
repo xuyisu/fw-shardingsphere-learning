@@ -17,6 +17,7 @@
         <module>shardingsphere-learning-sub-table-read-write</module>
         <module>shardingsphere-learning-sub-db-table-config</module>
         <module>shardingsphere-learning-encryptor</module>
+        <module>shardingsphere-learning-sub-db</module>
     </modules>
 
     <parent>

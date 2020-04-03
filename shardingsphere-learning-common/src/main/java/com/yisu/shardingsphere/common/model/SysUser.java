@@ -83,4 +83,8 @@ public class SysUser extends Model<SysUser> {
      * 手机号
      */
     private String userPhone;
+    /**
+     * 租户
+     */
+    private String tenant;
 }
