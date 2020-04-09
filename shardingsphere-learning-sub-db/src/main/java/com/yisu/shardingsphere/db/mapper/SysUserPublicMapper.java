@@ -26,4 +26,12 @@ public interface SysUserPublicMapper extends BaseMapper<SysUser> {
      */
     SysUser getUserUnionCommonByTenant(@Param("username") String username,@Param("tenant") String tenant);
 
+
+    /**
+     * 根据用户名仅测试关联查询
+     * @param username
+     * @return
+     */
+    SysUser getUserUnionByUserName(@Param("username") String username,@Param("tenant") String tenant);
+
 }

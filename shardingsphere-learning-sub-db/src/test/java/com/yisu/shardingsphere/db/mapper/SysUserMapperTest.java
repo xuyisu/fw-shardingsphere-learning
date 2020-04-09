@@ -32,4 +32,12 @@ public class SysUserMapperTest {
     }
 
 
+    @Test
+    public void getUserUnionByUserNameTest(){
+        SysUser unionCommon = sysUserMapper.getUserUnionByUserName("fwcloud0","adidas");
+        log.info(JSONUtil.toJsonStr(unionCommon));
+        System.out.println("ok");
+    }
+
+
 }

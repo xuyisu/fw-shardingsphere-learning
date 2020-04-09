@@ -87,6 +87,30 @@
             and sys.user_name =#{username} and sys.tenant=#{tenant}
         </where>
     </select>
+    <select id="getUserUnionByUserName" resultType="com.yisu.shardingsphere.common.model.SysUser">
+
+        select
+        sys.`id`,
+        sys.`create_time` as createTime,
+        sys.`update_time` as updateTime,
+        sys.`create_user` as createUser,
+        sys.`update_user` as updateUser,
+        sys.`delete_flag` as deleteFlag,
+        sys.`pos_code` as posCode,
+        sys.`disable_flag` as disableFlag,
+        sys.`avatar` ,
+        sys.`email`,
+        sys.`password`,
+        sys.`user_name` as userName,
+        sys.`real_name` as realName,
+        sys.`dept_code` as deptCode,
+        sys.`user_phone` as userPhone,
+        sys.`tenant`
+        from sys_user sys inner join sys_user_union com on sys.user_name = com.user_name
+        <where>
+            and sys.user_name =#{username} and sys.tenant=#{tenant}
+        </where>
+    </select>
 
 
 </mapper>
