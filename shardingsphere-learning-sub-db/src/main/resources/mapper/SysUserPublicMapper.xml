@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yisu.shardingsphere.db.mapper.SysUserPublicMapper">
+
+    <resultMap id="SysUser" type="com.yisu.shardingsphere.common.model.SysUser" >
+        <result column="id" property="id" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_user" property="createUser" />
+        <result column="update_user" property="updateUser" />
+        <result column="delete_flag" property="deleteFlag" />
+        <result column="pos_code" property="posCode" />
+        <result column="disable_flag" property="disableFlag" />
+        <result column="avatar" property="avatar" />
+        <result column="email" property="email" />
+        <result column="password" property="password" />
+        <result column="user_name" property="userName" />
+        <result column="real_name" property="realName" />
+        <result column="dept_code" property="deptCode" />
+        <result column="user_phone" property="userPhone" />
+        <result column="tenant" property="tenant" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        `id`,
+        `create_time`,
+        `update_time`,
+        `create_user`,
+        `update_user`,
+        `delete_flag`,
+        `pos_code`,
+        `disable_flag`,
+        `avatar`,
+        `email`,
+        `password`,
+        `user_name`,
+        `real_name`,
+        `dept_code`,
+        `user_phone`,
+        `tenant`
+    </sql>
+    <select id="getUserUnionCommon" resultType="com.yisu.shardingsphere.common.model.SysUser" >
+         select
+        sys.`id`,
+        sys.`create_time` as createTime,
+        sys.`update_time` as updateTime,
+        sys.`create_user` as createUser,
+        sys.`update_user` as updateUser,
+        sys.`delete_flag` as deleteFlag,
+        sys.`pos_code` as posCode,
+        sys.`disable_flag` as disableFlag,
+        sys.`avatar` ,
+        sys.`email`,
+        sys.`password`,
+        sys.`user_name` as userName,
+        sys.`real_name` as realName,
+        sys.`dept_code` as deptCode,
+        sys.`user_phone` as userPhone,
+        sys.`tenant`
+          from sys_user sys inner join sys_user_common com on sys.user_name = com.user_name
+         <where>
+             and sys.user_name =#{username} and sys.id=#{id}
+         </where>
+    </select>
+    <select id="getUserUnionCommonByTenant" resultType="com.yisu.shardingsphere.common.model.SysUser">
+
+        select
+        sys.`id`,
+        sys.`create_time` as createTime,
+        sys.`update_time` as updateTime,
+        sys.`create_user` as createUser,
+        sys.`update_user` as updateUser,
+        sys.`delete_flag` as deleteFlag,
+        sys.`pos_code` as posCode,
+        sys.`disable_flag` as disableFlag,
+        sys.`avatar` ,
+        sys.`email`,
+        sys.`password`,
+        sys.`user_name` as userName,
+        sys.`real_name` as realName,
+        sys.`dept_code` as deptCode,
+        sys.`user_phone` as userPhone,
+        sys.`tenant`
+        from sys_user sys inner join sys_user_common com on sys.user_name = com.user_name
+        <where>
+            and sys.user_name =#{username} and sys.tenant=#{tenant}
+        </where>
+    </select>
+
+
+</mapper>
