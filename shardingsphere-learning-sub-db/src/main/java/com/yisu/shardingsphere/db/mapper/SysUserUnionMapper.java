@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yisu.shardingsphere.db.model.SysUserCommon;
 
 /**
- * @description 系统Common测试-Mapper
+ * @description 系统Union测试-Mapper
  * @author xuyisu
  * @date '2020-03-22'
  */
