@@ -34,9 +34,11 @@ public class SysUserMapperTest {
 
     @Test
     public void getUserUnionByUserNameTest(){
+        long start = System.currentTimeMillis();
         SysUser unionCommon = sysUserMapper.getUserUnionByUserName("fwcloud0","adidas");
         log.info(JSONUtil.toJsonStr(unionCommon));
-        System.out.println("ok");
+        long end = System.currentTimeMillis();
+        System.out.println("time:"+(end-start));
     }
 
 

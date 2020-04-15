@@ -2,7 +2,7 @@
 
 
 ## 项目介绍
-ShardingSphere分库分表、读写分离、数据脱敏案例
+ShardingSphere分库分表、读写分离、数据脱敏、多租户实践案例
 ---
 （留个star再走吧）
 
@@ -41,6 +41,8 @@ ShardingSphere分库分表、读写分离、数据脱敏案例
 [Sharding-JDBC 同库分表读写分离](https://www.kancloud.cn/xuyisu/springcloud_springboot/1580664)
 *****
 [Sharding-JDBC 数据脱敏](https://www.kancloud.cn/xuyisu/springcloud_springboot/1580665)
+*****
+[Sharding-JDBC 多租户实践](https://www.kancloud.cn/xuyisu/springcloud_springboot/1627020)
 
 ### 交流群(QQ群779183850)
 >里面上传了很多架构、技术文档、共同进步
