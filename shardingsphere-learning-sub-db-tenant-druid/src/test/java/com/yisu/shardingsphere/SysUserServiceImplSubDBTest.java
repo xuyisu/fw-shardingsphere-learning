@@ -85,6 +85,16 @@ public class SysUserServiceImplSubDBTest {
         Assert.assertEquals(true,saveBatch>0);
     }
 
+    /**
+     * 测试事务控制情况
+     */
+    @Test
+    public void testBatchTemplate(){
+
+        sysUserService.insertTemplate();
+
+    }
+
 
     @Test
     public  void testSelectOne(){

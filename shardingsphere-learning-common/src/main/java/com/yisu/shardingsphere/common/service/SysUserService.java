@@ -10,5 +10,6 @@ import com.yisu.shardingsphere.common.model.SysUser;
 public interface SysUserService extends IService<SysUser> {
 
 
+     void insertTemplate();
 
 }
