@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yisu.shardingsphere.common.mapper.SysUserMapper">
+
+    <resultMap id="SysUser" type="com.yisu.shardingsphere.common.model.SysUser">
+        <result column="id" property="id"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_user" property="createUser"/>
+        <result column="update_user" property="updateUser"/>
+        <result column="delete_flag" property="deleteFlag"/>
+        <result column="pos_code" property="posCode"/>
+        <result column="disable_flag" property="disableFlag"/>
+        <result column="avatar" property="avatar"/>
+        <result column="email" property="email"/>
+        <result column="password" property="password"/>
+        <result column="user_name" property="userName"/>
+        <result column="real_name" property="realName"/>
+        <result column="dept_code" property="deptCode"/>
+        <result column="user_phone" property="userPhone"/>
+        <result column="tenant" property="tenant"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        `create_time`,
+        `update_time`,
+        `create_user`,
+        `update_user`,
+        `delete_flag`,
+        `pos_code`,
+        `disable_flag`,
+        `avatar`,
+        `email`,
+        `password`,
+        `user_name`,
+        `real_name`,
+        `dept_code`,
+        `user_phone`,
+        `tenant`
+    </sql>
+
+
+
+
+    <insert id="insertBatch" parameterType="java.util.List">
+        INSERT INTO sys_user (
+        <include refid="Base_Column_List"/>
+        )
+        VALUES
+        <foreach collection="list" item="obj" index="index" separator=",">
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                NOW(),
+                NOW(),
+                #{obj.createUser},
+                #{obj.updateUser},
+                false,
+                #{obj.posCode},
+                false,
+                #{obj.avatar},
+                #{obj.email},
+                #{obj.password},
+                #{obj.userName},
+                #{obj.realName},
+                #{obj.deptCode},
+                #{obj.userPhone},
+                #{obj.tenant}
+            </trim>
+        </foreach>
+    </insert>
+
+
+</mapper>

@@ -19,6 +19,8 @@
         <module>shardingsphere-learning-encryptor</module>
         <module>shardingsphere-learning-sub-db-tenant</module>
         <module>shardingsphere-learning-sub-table-tenant</module>
+        <module>shardingsphere-learning-sub-table-tenant-druid</module>
+        <module>shardingsphere-learning-sub-db-tenant-druid</module>
     </modules>
 
     <parent>
