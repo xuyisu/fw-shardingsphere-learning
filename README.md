@@ -2,7 +2,7 @@
 
 
 ## 项目介绍
-ShardingSphere分库分表、读写分离、数据脱敏、多租户实践案例
+ShardingSphere分库分表、读写分离、数据脱敏、多租户实践案例(sql 在doc 文件夹中)
 ---
 >欢迎star和fork,支持一下作者，让更多人发现
 
